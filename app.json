@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Reanimated",
+    "slug": "reanimated-bug",
+    "scheme": "reanimated-bug",
+    "owner": "phantom-rxn",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "extra": {},
+    "jsEngine": "hermes",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "orientation": "portrait",
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "13.4",
+            "useFrameworks": "static"
+          },
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34
+          }
+        }
+      ],
+      "sentry-expo",
+      "@heap/react-native-heap"
+    ],
+    "ios": {
+      "bundleIdentifier": "phantom-rxn.reanimated-bug",
+      "buildNumber": "1",
+      "associatedDomains": [],
+      "infoPlist": {
+        "UIBackgroundModes": ["remote-notification", "fetch"]
+      }
+    },
+    "runtimeVersion": "1.0.0",
+    "android": {
+      "package": "com.phantomrxn.reanimatedbug"
+    }
+  }
+}
